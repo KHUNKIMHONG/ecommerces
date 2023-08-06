@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.navbar{
+    background-color: rgb(247, 247, 237);
+}
+.nav-buttons{
+    margin-left: 60%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color: #d8d8d8;
+}
+.navbar-brand{
+    color: rgb(42, 61, 165);
+    font-size: larger;
+    font-style: normal;
+    font-weight: 900;
+    right: 20%;
+}
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.navbar-brand a{
+    margin-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link .nav-buttons{
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover{
+    color: chocolate;
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transform: 0.4s ease;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.navbar a:hover{
+    color: chocolate;
+}
+.nav-buttons{
+    gap: 40px;
+}
+@media screen and (max-width:990) {
+    .nav-buttons{
+        margin: 10px;
+    }
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .nav-buttons ul .fas{
+        margin: 20px 10px 15px 10px;
+    }
+}
+
+#home{
+    background-image: url('../imgae/home-bg.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 90px;
+    background-position-y: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: crimson;
+}
+button{
+    color: rgb(243, 244, 247);
+    background-color: rgba(7, 0, 7, 0.993);
+    height: 50px;
+    width: 150px;
+}
+button:hover{
+    background-color: rgb(255, 136, 0);
+}
+#home div{
+    margin-right: 22%;
+}
+
+#new .one img{
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(168, 158, 20);
+    font-weight: bold;
+    transition: 0.04s ease;
+    opacity: 0.8;
+    background-color: rgb(1,1,1);
+    width: 100%;
+    height: 80%;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one .details:hover{
+    background-color: blanchedalmond;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.star{
+    color: darkgoldenrod;
+}
+
+/* product */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-top: 5px;
+}
+.product img{
+    transition: 0.4s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+li .List-unstyled .list-inline{
+    display: flex;
+    gap: 20px;
+
+}
+footer{
+    margin: 0 5px;
+}
+footer p{
+    color: #999;
+    font-size: 0.9rem;
+}
+#feature .img{
+    height: 60%;
+}
+#featurd .img{
+    flex-basis: 70%;
+    cursor: pointer;
+}
+#featurd{
+    margin-top: 50%;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.container{
+    flex: start;
+}
+
+.single-product input{
+    width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+.single-product .buy-btn{
+    background-color: rgb(219, 23, 9);
+    opacity: 1;
+    transition: 0.4s all;
+}
+.single-product .buy-btn:hover{
+    background-color: chartreuse;
+}
+
+/*cart*/
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: azure;
+    background-color: coral;
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid coral;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.checkout-btn{
+    background-color: chocolate;
+    color: rgb(21, 22, 22);
+}
+/*Login*/
+#login-form input{
+    border: 1px solid rgb(105, 103, 103);
+    width: 50%;
+    margin: 5px auto;
+}
+
+/*Login*/
+#login-form{
+    width: 60%;
+    margin: 5px auto;
+    padding: 40px;
+    border-top: 1px solid cadetblue;
+    text-align: center;
+}
+#login-form #login-btn{
+    background-color: cadetblue;
+    color: aliceblue;
+}
+#login-form #register-url{
+    color: cadetblue;
+}
+
+/*Register Login*/
+#register-form input{
+    border: 1px solid rgb(105, 103, 103);
+    width: 50%;
+    margin: 5px auto;
+}
+
+/*Login*/
+#register-form{
+    width: 60%;
+    margin: 5px auto;
+    padding: 40px;
+    border-top: 1px solid cadetblue;
+    text-align: center;
+}
+#register-form #register-btn{
+    background-color: cadetblue;
+    color: aliceblue;
+}
+#register-form #login-url{
+    color: cadetblue;
+}
+
+/*account fordm*/
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+#account-form input{
+    border: 0.5px solid rgb(15, 15, 15);
+    margin: 5px auto;
+}
+#account-form #change-pass-btn{
+    color: aliceblue;
+    background-color: cadetblue;
+}
+
+.account-info #orders-btn,#logout-btn{
+    color: rgb(255, 0, 21);
+    text-decoration: none;
+}
+/*Checkout*/
+#checkout-form input{
+    border: 0.5px solid rgb(15, 15, 15);
+    margin: 5px auto;
+}
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+#checkout-form .checkout-large-element{
+    width: 96%;
+}
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+#checkout-form #checkout-btn{
+    color: #d8d8d8;
+    background-color: cadetblue;
+}
+/* contact*/
+#contact span{
+    color: cadetblue;
+}
